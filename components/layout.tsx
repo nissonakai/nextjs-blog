@@ -5,19 +5,21 @@ import {
     headerHomeImage,
     headerImage,
     backToHome
+    // @ts-ignore
 } from "./layout.module.css";
 import {
     borderCircle,
     heading2Xl,
     headingLg,
     colorInherit
+    // @ts-ignore
 } from "../styles/utils.module.css";
 import Link from "next/link";
 
 const yourName = "Your Name";
 export const siteTitle = 'Next.js Sample Website';
 
-function Layout({ children, home }) {
+function Layout({ children, home }: { children: React.ReactNode, home?: boolean }) {
     return (
         <div className={container}>
             <Head>
